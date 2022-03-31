@@ -48,7 +48,7 @@ body{
 }
 
 .app-logo{
-    background: url('https://html-e-css4.projetoslucasbargas.com/assets/images/more_imgs/app_logo.png');
+    background: url('https://citadeladoctor.projetoslucasbargas.com/assets/images/more_imgs/app_logo.png');
     background-position: center;
     background-size: 100% 100%;
     width: 51px;
@@ -113,7 +113,7 @@ body{
 .initial-bg{
     display: flex;
     align-items: center;
-    background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/bgs/initial_bg.jpg');
+    background-image: url('https://citadeladoctor.projetoslucasbargas.com/assets/images/bgs/initial_bg.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -201,7 +201,7 @@ body{
 .app-bg-over{
     display: flex;
     align-items: center;
-    background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/bgs/over_bg.jpg');
+    background-image: url('https://citadeladoctor.projetoslucasbargas.com/assets/images/bgs/over_bg.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -533,7 +533,7 @@ body{
 
     .menu-mobile{
         display: block;
-        background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/menu-mobile.png');
+        background-image: url('https://citadeladoctor.projetoslucasbargas.com/assets/images/menu-mobile.png');
         background-position: center;
         background-size: 100% 100%;
         width: 22px;
@@ -617,7 +617,7 @@ body{
     }
 
     .menu-mobile{
-        background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/menu-mobile-2.png');
+        background-image: url('https://citadeladoctor.projetoslucasbargas.com/assets/images/menu-mobile-2.png');
         width: 60px;
         height: 39px;
         position: fixed;
