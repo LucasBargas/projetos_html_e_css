@@ -98,11 +98,11 @@ body{
 }
 
 .header-help-vouchers li:first-child .icon-left::before{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/present.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/present.svg');
 }
 
 .header-help-vouchers li:last-child .icon-left::before{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/star.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/star.svg');
 }
 
 .header-client{
@@ -123,7 +123,7 @@ body{
 
 .header-logo .logo{
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/logo.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/logos/logo.png');
     background-position: center;
     background-size: 100% 100%;
     width: 176px;
@@ -168,7 +168,7 @@ body{
 
 .loupe{
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/search.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/search.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 16px;
@@ -183,7 +183,7 @@ body{
 
 .header-client-cart{
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/cart.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/cart.png');
     background-position: center;
     background-size: 100% 100%;
     width: 30px;
@@ -199,7 +199,7 @@ body{
 .user-access::before{
     content: '';
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/user.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/user.png');
     background-position: center;
     background-size: 100% 100%;
     width: 40px;
@@ -209,7 +209,7 @@ body{
 .user-access::after{
     content: '';
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/down_chevron.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/down_chevron.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 14px;
@@ -264,7 +264,7 @@ body{
 }
 
 .five-stars{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/five_stars.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/five_stars.png');
     background-position: center;
     background-size: 100% 100%;
     width: 48px;
@@ -314,7 +314,7 @@ body{
     grid-column: 1/3;
     grid-row: 2/4;
     height: 450px;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/beach.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/beach.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -345,7 +345,7 @@ body{
 }
 
 .hotel-chevron-left{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/left_chevron.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/left_chevron.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 10px;
@@ -354,7 +354,7 @@ body{
 }
 
 .hotel-chevron-right{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/right_chevron.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/right_chevron.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 10px;
@@ -363,7 +363,7 @@ body{
 }
 
 .hotel-localization{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/map.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/map.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -376,7 +376,7 @@ body{
     position: absolute;
     right: 5px;
     top: 20px;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/right_button.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/right_button.png');
     background-position: center;
     background-size: 100% 100%;
     width: 37px;
@@ -390,7 +390,7 @@ body{
     bottom: 0;
     left: 50%;
     transform: translatex(-50%);
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/bottom_controller.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/bottom_controller.png');
     background-position: center;
     background-size: 100% 100%;
     width: 165px;
@@ -434,7 +434,7 @@ body{
 .sizes p:first-of-type::before{
     content: '';
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/user.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/user.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 14px;
@@ -444,7 +444,7 @@ body{
 .sizes p:last-of-type::before{
     content: '';
     display: block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/home.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/home.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 14px;
@@ -465,7 +465,7 @@ body{
 .sizes h3::before{
     content: '';
     display: inline-block;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/phone2.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/phone2.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 14px;
@@ -582,7 +582,7 @@ body{
     display: block;
     width: 14.67px;
     height: 14.67px;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/check.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/check.svg');
     background-position: center;
     background-size: 100% 100%;
 }
@@ -592,7 +592,7 @@ body{
     display: block;
     width: 14.67px;
     height: 14.67px;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/calendar.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/calendar.svg');
     background-position: center;
     background-size: 100% 100%;
 }
@@ -638,7 +638,7 @@ body{
 }
 
 .mp-one .more-packages-bg{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_one.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/mp_img_one.png');
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -701,15 +701,15 @@ body{
 }
 
 .map::before{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/map-pin.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/map-pin.svg');
 }
 
 .user::before{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/user.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/user.svg');
 }
 
 .home::before{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/home.svg');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/home.svg');
 }
 
 .mp-price{
@@ -752,7 +752,7 @@ body{
 }
 
 .mp-two .more-packages-bg{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_two.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/mp_img_two.png');
     height: 50%;
     width: 100%;
     border-top-left-radius: 8px;
@@ -772,7 +772,7 @@ body{
 }
 
 .mp-three .more-packages-bg{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_three.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/mp_img_three.png');
     height: 50%;
     width: 100%;
     border-top-left-radius: 8px;
@@ -780,7 +780,7 @@ body{
 }
 
 .mp-four .more-packages-bg{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_four.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/mp_img_four.png');
     height: 50%;
     width: 100%;
     border-top-left-radius: 8px;
@@ -788,7 +788,7 @@ body{
 }
 
 .mp-five .more-packages-bg{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_five.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/mp_img_five.png');
     height: 50%;
     width: 100%;
     border-top-left-radius: 8px;
@@ -849,7 +849,7 @@ body{
 }
 
 .newsletter{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/newsletter.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/newsletter.png');
     background-position: center;
     background-size: cover;
     height: 260px;
@@ -969,19 +969,19 @@ body{
 }
 
 .activity-card-one{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_one.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/activity_one.png');
 }
 
 .activity-card-two{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_two.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/activity_two.png');
 }
 
 .activity-card-three{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_three.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/activity_three.png');
 }
 
 .activity-card-four{
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_four.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/img_sections/activity_four.png');
 }
 
 .activity-text{
@@ -1027,7 +1027,7 @@ body{
     display: block;
     background-position: center;
     background-size: 100% 100%;
-    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/footer_logo.png');
+    background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/logos/footer_logo.png');
     width: 166px;
     height: 192px;
 }
@@ -1391,7 +1391,7 @@ body{
     }
 
     .header-logo .logo{
-        background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/logo2.png');
+        background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/logos/logo2.png');
     }
 
     .header-form, .header-client-cart, .user-access{
@@ -1411,7 +1411,7 @@ body{
     }
 
     .mobile-icon{
-        background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/mobile.png');
+        background-image: url('https://besttourplan.projetoslucasbargas.com/assets/images/icons/mobile.png');
         background-position: center;
         background-size: 100% 100%;
         width: 19px;
