@@ -1,0 +1,833 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    text-decoration: none;
+}
+
+:root{
+    --app-green: #035755;
+    --app-red: #FA5652;
+    --app-yellow: #fed501;
+    --app-gray: #A7ABAE;
+    --footer-color: hsl(168, 34%, 41%);
+}
+
+/*font-family: 'Fraunces', serif;*/
+h2{
+    font-family: 'Fraunces', serif;
+    color: #23303E;
+}
+
+p{
+    line-height: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.initial-content{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/image_header.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.initial-nav{
+    padding: 30px 0;
+}
+
+.initial-nav-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-app{
+    display: flex;
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/logo_app.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 124px;
+    height: 24px;
+}
+
+.initial-nav-right{
+    display: flex;
+}
+
+.app-nav nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.initial-nav-right li{
+    margin-left: 40px;
+}
+
+.initial-nav-right li:last-of-type a{
+    background-color: #ffffff;
+    color: #23303E;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'Fraunces', serif;
+    transition: 0.7s;
+}
+
+.initial-nav-right li:last-of-type a:hover{
+    background-color: #3aa7dd;
+    color: #ffffff;
+}
+
+.app-nav li a{
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+}
+
+.initial-nav-right li:not(:last-of-type) a::after{
+    content: '';
+    display: flex;
+    height: 2px;
+    background-color: #ffffff;
+    width: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.initial-nav-right li:not(:last-of-type) a:hover::after{
+    width: 100%;
+}
+
+.mobile-menu{
+    display: none;
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/menu_mobile.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.initial-nav-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.initial-nav-text h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.125rem;
+    letter-spacing: 3px;
+}
+
+.arrow-down{
+    display: flex;
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/arrow_down.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 36px;
+    height: 114px;
+    margin-top: 30px;
+    cursor: pointer;
+    animation: is-boucing 0.5s ease-in-out alternate infinite;  
+}
+
+@keyframes is-boucing{
+    to{
+        transform: translateY(45px);
+    }
+}
+
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.benefits-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0;
+    background-color: #ffffff;
+}
+
+.benefits-text-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.benefits-text-content, .benefits-final-text{
+    max-width: 500px;
+}
+
+.benefits-text-content h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.benefits-text-content p{
+    font-weight: 600;
+    color: #818498;
+    line-height: 25px;
+    margin: 35px 0;
+    font-size: 1.12rem;
+}
+
+.benefits-link a{
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    color: #23303E;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.benefits-link a::after{
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+    opacity: 0.4;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.benefits-link a:hover::after{
+    opacity: 1;
+}
+
+.benefits-link-one a::after{
+    background-color: var(--app-yellow);
+}
+
+.benefits-link-one a:hover::after{
+    background-color: var(--app-yellow);
+}
+
+.benefits-link-two a::after{
+    background-color: var(--app-red);
+}
+
+.benefits-link-two a:hover::after{
+    background-color: var(--app-red);
+}
+
+.benefits-illustration{
+    background-size: cover;
+    background-position: center;
+}
+
+.benefits-illustration-one{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/egg_illustration.jpg');
+}
+
+.benefits-illustration-two{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/cup_illustration.jpg');
+}
+
+.benefits-illustration-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    height: 500px;
+    padding: 0 0 50px 0;
+}
+
+.benefits-final-one{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/fruit_illustration_one.jpg');
+}
+
+.benefits-final-two{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/fruit_illustration_two.jpg');
+}
+
+.benefits-final-text{
+    text-align: center;
+}
+
+.benefits-final-text h2{
+    font-size: 1.32rem;
+}
+
+.benefits-final-text p{
+    margin-top: 20px;
+    font-weight: 600;
+    color: #19536B;
+    line-height: 25px;
+    font-size: 0.875rem;
+}
+
+.clients-testimonials{
+    padding: 140px 0;
+}
+
+.title-section{
+    text-align: center;
+    color: var(--app-gray);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.clients-testimonials-area{
+    padding-top: 70px;
+    display: flex;
+    gap: 50px;
+}
+
+.clients-testimonials-single{
+    width: calc(100% / 3);
+}
+
+.clients-info{
+    text-align: center;
+}
+
+.clients-info figure img{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+}
+
+.clients-info > p{
+    margin: 50px 0;
+    color: #818498;
+    font-weight: 500;
+}
+
+.client-datas h2{
+    font-size: 1.25rem;
+}
+
+.client-datas p{
+    margin-top: 10px;
+    font-size: 0.88rem;
+    color: #818498;
+    font-weight: 600;
+}
+
+.illustration-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 380px;
+}
+
+.illustration-row-one{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_one.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.illustration-row-two{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_two.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.illustration-row-three{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_three.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.illustration-row-four{
+    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_four.jpg');
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.final-app{
+    background-color: var(--footer-color);
+    padding: 85px 0;
+}
+
+.final-app-area{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.final-app-area .app-nav{
+    padding: 40px 0 70px 0;
+}
+
+.final-app-area .app-nav li{
+    margin: 0 15px;
+}
+
+.final-app-area .app-nav li a{
+    color: #25564b;
+    transition: 0.7s;
+}
+
+.final-app-area .app-nav li a:hover{
+    color: #ffffff;
+}
+
+.social-medias ul{
+    display: flex;
+    list-style: none;
+}
+
+.social-medias li{
+    margin: 0 10px;
+}
+
+.social-medias svg{
+    cursor: pointer;
+}
+
+.social-medias svg path{
+    transition: 0.7s;
+}
+
+.social-medias svg:hover path{
+    fill: #ffffff;
+}
+
+.creator-info{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.creator-info p, a{
+    color: #23303E;
+}
+
+.creator-info a{
+    font-weight: 500;
+    transition: 0.7s;
+}
+
+.creator-info a:hover{
+    text-decoration: underline;
+}
+
+.original-layout{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal{
+    position: fixed;
+    background: rgba(69, 143, 247,0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: #3dbeff;
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: #000000;
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    font-weight: 700;
+    color: #3dbeff;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.modal-button{
+    background: #3dbeff;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.modal-button:hover{
+    background: #3bb1ec;
+}
+
+/***************media-queries****************/
+@media screen and (min-width: 1537px) and (max-width: 1920px){
+    .container{
+        max-width: 1500px;
+    }
+
+    .benefits-illustration-text {
+        height: 550px;
+        padding: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 1536px){
+    .initial-content{
+        min-height: 876px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1366px){
+    .initial-content{
+        min-height: 530px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .container{
+        max-width: 1180px;
+    }
+
+    .initial-content{
+        min-height: 800px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .initial-content{
+        min-height: none;
+        height: 100vh;
+    }
+
+    .benefits-text-content, .benefits-final-text{
+        max-width: none;
+    }
+
+    .benefits-text{
+        padding: 130px 50px;
+    }
+
+    .benefits-illustration-text{
+        background-position: center;
+    }
+
+    .benefits-illustration-text{
+        padding: 0 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .initial-nav-right nav ul{
+        display: none;
+    }
+    
+    .mobile-menu{
+        display: flex;
+    }
+
+    .benefits-illustration-text{
+        padding: 0 40px 30px 40px;
+    }
+
+    .clients-testimonials-area{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    
+    .clients-testimonials-single{
+        padding: 0 20px 50px 20px;
+        width: 50%;
+    }
+
+    .illustration-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 760px){
+    .benefits{
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-text{
+        background-color: #ffffff;
+        padding: 80px 40px;
+    }
+    
+    .benefits-text-two{
+        grid-column: 1/2;
+    } 
+
+    .benefits-text-two{
+        grid-row: 3/4;
+    }
+    
+    .benefits-illustration{
+        height: 500px;
+    }
+
+    .benefits-illustration-text{
+        padding: 0 60px 30px 60px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 0 4%;
+    }
+
+    .modal-area{
+        width: 90%;
+    }
+
+    .modal-area-content p{
+        text-align: center;
+    }
+
+    .clients-testimonials {
+        padding: 110px 0;
+    }
+
+    .clients-testimonials-area{
+        flex-direction: column;
+    }
+    
+    .clients-testimonials-single{
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .clients-testimonials-single:not(:last-of-type){
+        padding-bottom: 60px;
+    }
+
+    .clients-info > p{
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .initial-content{
+        min-height: 0;
+    }
+
+    .benefits-text-content h2{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .illustration-row{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .initial-nav-text h2{
+        font-size: 2.25rem;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .benefits-text{
+        padding: 60px 30px;
+    }
+
+    .benefits-text-content{
+        text-align: center;
+    }
+
+    .benefits-text-content h2{
+        font-size: 1.75rem;
+        font-weight: 800;
+    }
+
+    .benefits-link a{
+        display: inline-block;
+    }
+
+    .benefits-illustration, .benefits-illustration-text{
+        height: 400px;
+    }
+
+    .benefits-illustration-text{
+        padding: 0 30px 15px 30px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .title-section{
+        letter-spacing: 4px;
+    }
+
+    .title-section, .client-datas h2{
+        font-size: 1rem;
+    }
+
+    .illustration-row{
+        grid-auto-rows: 250px;
+    }
+}
+
+@media screen and (max-width: 240px){
+    .initial-nav {
+        padding: 25px 0;
+    }
+
+    .logo-app {
+        width: 100px;
+        height: 19px;
+    }
+
+    .mobile-menu {
+        width: 17px;
+        height: 17px;
+    }
+
+    .initial-nav-text{
+        padding-top: 20px;
+    }
+
+    .initial-nav-text h2{
+        font-size: 1.30rem;
+    }
+
+    .arrow-down{
+        margin-top: 15px;
+        width: 32px;
+        height: 100px;
+    }
+
+    .benefits-text-content h2{
+        font-size: 1.37rem;
+        font-weight: 700;
+    }
+
+    .benefits-text-content p{
+        margin: 25px 0;
+        font-size: 0.94rem;
+    }
+
+    .benefits-illustration-text{
+        padding: 0 10px 20px 10px;
+    }
+
+    .benefits-final-text h2{
+        font-size: 1.25rem;
+    }
+
+    .benefits-final-text p{
+        margin-top: 10px;
+    }
+
+    .clients-testimonials {
+        padding: 80px 0;
+    }
+
+    .clients-testimonials-area {
+        padding-top: 50px;
+    }
+
+    .illustration-row{
+        grid-auto-rows: 220px;
+    }
+
+    .final-app .app-nav nav ul{
+        flex-direction: column;
+    }
+
+    .final-app-area .app-nav li{
+        margin: 0 0;
+    }
+
+    .final-app-area .app-nav li:not(:first-of-type){
+        margin-top: 15px;
+    }
+
+    .creator-info p, a{
+        font-size: 0.87rem;
+    }
+}

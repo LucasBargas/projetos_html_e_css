@@ -1,0 +1,1772 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --white-color: #ffffff;
+    --red-color: #EC1F46;
+    --blue-color: #0A223D;
+    --font-color: #333333;
+    --background: #F5FAFE;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    color: var(--font-color);
+    background: var(--background);
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section{
+    padding: 25px 0;
+}
+
+.space{
+    padding: 0 4%;
+}
+
+.price-area{
+    background: var(--blue-color);
+    color: var(--white-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+.call-to-action{
+    background: var(--red-color);
+    color: var(--white-color);
+    transition: 0.5s;
+}
+
+.call-to-action:hover{
+    opacity: 0.8;
+}
+
+.header-help{
+    background: var(--background);
+}
+
+.header-help-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-help h3, .header-help a{
+    font-size: 0.75rem;
+}
+
+.header-help a{
+    color: var(--font-color);
+}
+
+.icon-left{
+    align-items: center;
+    color: var(--font-color);
+    font-size: 0.75rem;
+}
+
+.icon-left::before{
+    content: '';
+    display: block;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 16.5px;
+    height: 16.5px;
+    margin-right: 15px;
+}
+
+.header-help-vouchers ul{
+    gap: 70px;
+}
+
+.header-help-vouchers li:first-child .icon-left::before{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/present.svg');
+}
+
+.header-help-vouchers li:last-child .icon-left::before{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/star.svg');
+}
+
+.header-client{
+    background: var(--white-color);
+}
+
+.header-client-area{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-size: 0.88rem;
+    align-items: center;
+}
+
+.header-client-search{
+    gap: 120px;
+    align-items: center;
+}
+
+.header-logo .logo{
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/logo.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 176px;
+    height: 22px;
+}
+
+.header-form{
+    display: flex;
+    width: 100%;
+}
+
+.header-form input{
+    background: var(--background);
+    width: 100%;
+    outline: 0;
+    padding: 0 25px;
+}
+
+.header-form input, .header-form button{
+    border: 0;
+    height: 40px;
+}
+
+.header-form input{
+    color: var(--font-color);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.header-form button{
+    background: var(--red-color);
+    cursor: pointer;
+    padding: 0 25px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: 0.5s;
+}
+
+.header-form button:hover{
+    opacity: 0.9;
+}
+
+.loupe{
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/search.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+}
+
+.header-client-user{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-client-cart{
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/cart.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.user-access{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-access::before{
+    content: '';
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/user.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-access::after{
+    content: '';
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/down_chevron.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 8px;
+    cursor: pointer;
+}
+
+.user-access a{
+    color: var(--font-color);
+}
+
+.header-nav{
+    background: var(--blue-color);
+}
+
+.header-nav a{
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 0.88rem;
+}
+
+.button-mobile{
+    display: none;
+}
+
+.navigation{
+    font-size: 0.88rem;
+}
+
+.navigation a{
+    color: var(--font-color);
+    opacity: 1;
+}
+
+.navigation span:last-of-type{
+    opacity: 0.6;
+}
+
+.hotel.section{
+    padding: 10px 0 25px 0;
+}
+
+.hotel-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hotel-info{
+    grid-column: 1/4;
+}
+
+.five-stars{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/five_stars.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 48px;
+    height: 8px;
+}
+
+.hotel-name h1{
+    font-size: 1.5rem;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hotel-name h1::after{
+    content: 'Flash Offer';
+    background: var(--red-color);
+    font-size: 0.63rem;
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.hotel-name p{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.hotel-avaliation{
+    align-self: flex-end;
+    background: var(--red-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.hotel-avaliation > p{
+    font-size: 0.63rem;
+}
+
+.hotel-avaliation span{
+    font-size: 0.75rem;
+}
+
+.hotel-img{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    height: 450px;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/beach.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.hotel-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.hotel-img-slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.hotel-chevron-left{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/left_chevron.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 10px;
+    height: 17.5px;
+    cursor: pointer;
+}
+
+.hotel-chevron-right{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/right_chevron.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 10px;
+    height: 17.5px;
+    cursor: pointer;
+}
+
+.hotel-localization{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/map.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 213px;
+    border-radius: 8px;
+}
+
+.hotel-localization::before{
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/right_button.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 37px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.hotel-localization::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/bottom_controller.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 165px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.hotel-package{
+    border-radius: 8px;
+    padding: 16px 25px;
+    height: 210px;
+}
+
+.hotel-package p{
+    opacity: 0.8;
+}
+
+.values p:first-of-type{
+    font-size: 0.75rem;
+}
+
+.values p:last-of-type{
+    font-size: 0.88rem;
+}
+
+.values h3{
+    margin-top: 15px;
+}
+
+.sizes{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sizes p{
+    font-size: 0.75rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.sizes p:first-of-type::before{
+    content: '';
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/user.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+}
+
+.sizes p:last-of-type::before{
+    content: '';
+    display: block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/home.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+}
+
+.contact{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sizes h3{
+    align-items: center;
+    gap: 10px;
+}
+
+.sizes h3::before{
+    content: '';
+    display: inline-block;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/phone2.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+}
+
+.hotel-packages-button{
+    padding-top: 18px;
+}
+
+.hotel-packages-button a{
+    display: block;
+    padding: 12px 18px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.package-nav-area ul a{
+    color: var(--font-color);
+    font-weight: 600;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.package-nav-area ul li:first-of-type a{
+    color: var(--red-color);
+    position: relative;
+}
+
+.package-nav-area ul li:first-of-type a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--red-color);
+}
+
+.package-summery-area.space{
+    padding: 25px 4% 0 4%;
+}
+
+.package-summery-area > h1{
+    text-transform: uppercase;
+}
+
+.package-summery-infos{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.package-summery-one, .package-summery-two, .package-summery-three{
+    background: var(--white-color);
+    border-radius: 8px;
+}
+
+.package-summery-three{
+    grid-column: 1/3;
+}
+
+.package-summerty-title{
+    background: var(--blue-color);
+    color: var(--white-color);
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.package-summerty-title h3{
+    font-size: 0.88rem;
+}
+
+.package-summery-list.section{
+    padding: 25px 20px;
+}
+
+.summery-list-one{
+    border-bottom: 1px dotted var(--font-color);
+}
+
+.package-summery-three .package-summery-list{
+    padding: 0 20px;
+}
+
+.summery-list-one ul, .summery-list-two ul{
+    flex: 1;
+}
+
+.package-summery-infos ul li:not(:first-of-type){
+    margin-top: 20px;
+}
+
+.package-summery-infos ul li{
+    font-size: 0.75rem;
+}
+
+.package-summery-infos ul h3{
+    color: var(--red-color);
+    font-size: 0.82rem;
+    margin-bottom: 20px;
+}
+
+.icon-one, .icon-two{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.package-summery-infos .icon-one::before{
+    content: '';
+    display: block;
+    width: 14.67px;
+    height: 14.67px;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/check.svg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.package-summery-infos .icon-two::before{
+    content: '';
+    display: block;
+    width: 14.67px;
+    height: 14.67px;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/calendar.svg');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.package-summery-two ul:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.more-packages.section{
+    padding: 25px 4%;
+}
+
+.more-packages-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.more-packages-area h1{
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    grid-column: 1/4;
+}
+
+.more-packages-single{
+    height: 500px;
+}
+
+.mp-one{
+    grid-column: 1/3;
+    display: flex;
+}
+
+.more-packages-bg, .more-packages-txt{
+    width: 50%;
+}
+
+.more-packages-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+.mp-one .more-packages-bg{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_one.png');
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.mp-one .more-packages-txt{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.mp-one .mp-stamp{
+    font-size: 0.75rem;
+}
+
+.mp-stamp{
+    background: var(--red-color);
+    display: inline-block;
+    color: var(--white-color);
+    border-radius: 8px;
+    padding: 7px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.more-packages-txt{
+    padding: 60px 35px;
+}
+
+.more-packages-txt h2{
+    font-size: 1.13rem;
+    margin-top: 6px;
+}
+
+.more-packages-txt p{
+    font-size: 0.88rem;
+    margin: 25px 0 40px 0;
+}
+
+.more-packages-txt li{
+    font-size: 0.75rem;
+}
+
+.more-packages-txt li:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.mp-icon{
+    display: flex;
+    align-items: center;
+}
+
+.mp-icon::before{
+    content: '';
+    display: block;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;;
+}
+
+.map::before{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/map-pin.svg');
+}
+
+.user::before{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/user.svg');
+}
+
+.home::before{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/home.svg');
+}
+
+.mp-price{
+    padding-top: 20px;
+}
+
+.mp-price-area{
+    align-items: center;
+}
+
+.mp-price h3{
+    font-size: 0.88rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.mp-price h3::after{
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--white-color);
+}
+
+.mp-price h4{
+    font-size: 1.5rem;
+}
+
+.mp-price-button .call-to-action{
+    border-radius: 8px;
+    padding: 12px 30px;
+    display: inline-block;
+}
+
+.mp-two .mp-stamp, .mp-three .mp-stamp, .mp-four .mp-stamp, .mp-five .mp-stamp{
+    font-size: 0.5rem;
+}
+
+.mp-two .more-packages-bg{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_two.png');
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mp-two .more-packages-txt, .mp-three .more-packages-txt, .mp-four .more-packages-txt, .mp-five .more-packages-txt{
+    height: 50%;
+    width: 100%;
+    padding: 25px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.mp-two .more-packages-txt h2, .mp-three .more-packages-txt h2, .mp-four .more-packages-txt h2, .mp-five .more-packages-txt h2{
+    margin: 0 0 20px 0;
+}
+
+.mp-three .more-packages-bg{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_three.png');
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mp-four .more-packages-bg{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_four.png');
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mp-five .more-packages-bg{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/mp_img_five.png');
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.our-clients.section{
+    padding: 35px 4% 60px 4%;
+}
+
+.our-clients h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.our-clients-area{
+    max-width: 730px;
+    margin: 90px auto 0 auto;
+    background: var(--white-color);
+    border-radius: 8px;
+}
+
+.our-clients-info{
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+.our-clients-info img{
+    width: 90px;
+    height: 90px;
+}
+
+.our-clients-info figcaption h2{
+    font-size: 0.75rem;
+    color: var(--red-color);
+}
+
+.our-clients-info figcaption P{
+    font-size: 0.63rem;
+    margin: 15px 0 5px 0;
+}
+
+.our-clients-info .five-stars{
+    margin: 0 auto;
+}
+
+.our-clients-text{
+    padding-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+} 
+
+.our-clients-text p{
+    font-size: 0.75rem;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.newsletter{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/newsletter.png');
+    background-position: center;
+    background-size: cover;
+    height: 260px;
+    position: relative;
+    z-index: 4;
+}
+
+.newsletter::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10, 34, 61, 0.8);
+    z-index: 5;
+}
+
+.newsletter-area{
+    padding: 90px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    position: relative;
+    z-index: 6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--white-color);
+}
+
+.newsletter-left h2{
+    font-weight: 400;
+}
+
+.newsletter-left h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+.newsletter-right{
+    display: flex;
+}
+
+.newsletter-right input, .newsletter-right button{
+    height: 55px;
+    border: 0;
+    outline: 0;
+}
+
+.newsletter-right input{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0 40px;
+    font-size: 1rem;
+}
+
+.newsletter-right input::placeholder{
+    opacity: 0.7;
+    color: #BDBDBD;
+}
+
+.newsletter-right button{
+    color: var(--white-color);
+    padding: 0 20px;
+    background: var(--red-color);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.newsletter-right button:hover{
+    opacity: 0.8;
+}
+
+.other-activities h1{
+    text-transform: uppercase;
+}
+
+.other-activities-area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 255px;
+    gap: 30px;
+}
+
+.other-activities.section{
+    padding: 50px 4% 50px 4%;
+}
+
+.other-activities-area{
+    padding-top: 40px;
+}
+
+.activity{
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 7;
+    padding: 30px;
+}
+
+.activity::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    border-radius: 8px;
+}
+
+.activity-card-one{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_one.png');
+}
+
+.activity-card-two{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_two.png');
+}
+
+.activity-card-three{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_three.png');
+}
+
+.activity-card-four{
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/img_sections/activity_four.png');
+}
+
+.activity-text{
+    position: relative;
+    z-index: 9;
+}
+
+.activity-text p, .activity-text a{
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.activity-button{
+    padding-top: 20px;
+}
+
+.activity-button a{
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.final-content{
+    background: var(--blue-color);
+}
+
+.final-content.section{
+    padding: 60px 0 30px 0;
+}
+
+.final-content-text{
+    color: var(--white-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px 60px;
+}
+
+.final-content-one{
+    padding-top: 30px;
+}
+
+.final-logo{
+    display: block;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/footer_logo.png');
+    width: 166px;
+    height: 192px;
+}
+
+.final-content-five{
+    grid-column: 1/3;
+}
+
+.final-content-six{
+    grid-column: 3/5;
+}
+
+.final-content-seven{
+    grid-column: 1/5;
+}
+
+.final-content-title{
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+
+.final-content-list li, .final-content-list li a, .final-content-list p, .final-content-list span{
+    color: var(--white-color);
+    opacity: 0.7;
+    font-size: 0.88rem;
+}
+
+.sub-list li{
+    color: var(--white-color);
+    opacity: 0.6;
+    font-size: 0.88rem;
+}
+
+.final-content-list a, .final-content-list li{
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.final-content-list{
+    padding-top: 20px;
+}
+
+.final-content-media{
+    padding-top: 25px;
+}
+
+.medias{
+    gap: 5px;
+    align-items: center;
+}
+
+.medias img{
+    width: 18px;
+    height: 18px;
+}
+
+.sub-list{
+    padding: 20px 0;
+}
+
+.final-content-five .mail, .final-content-five .map{
+    display: flex;
+    align-items: center;
+}
+
+.final-content-five figure img{
+    position: relative;
+    top: 4px;
+    margin-right: 20px;
+}
+
+.final-content-form{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 35px;
+}
+
+.final-content-form input, .final-content-form textarea{
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Mulish', sans-serif;
+    padding: 0 20px;
+}
+
+.final-content-form textarea{
+    height: 123px;
+    resize: none;
+    padding: 15px 20px;
+}
+
+.final-content-form input{
+    height: 50px;
+}
+
+.final-content-form textarea, .final-content-button{
+    grid-column: 1/3;
+}
+
+.final-content-form input::placeholder, .final-content-form textarea::placeholder{
+    opacity: 0.5;
+    font-size: 0.75rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.final-content-button{
+    align-items: center;
+}
+
+.final-content-button a{
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.final-content-button span{
+    color: var(--white-color);
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+.final-content-seven{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.final-content-seven .flex{
+    justify-content: flex-end;
+}
+
+.final-content-seven ul{
+    gap: 15px;
+}
+
+.final-content-seven a{
+    color: var(--white-color);
+    opacity: 0.6;
+}
+
+.footer-info-creation{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer-info-creation p, .footer-info-creation a{
+    color: var(--white-color);
+    opacity: 1;
+}
+
+.footer-info-creation a{
+    color: var(--red-color);
+    font-weight: 700;
+    display: inline-block;
+}
+
+.footer-info-creation a:last-of-type{
+    margin-top: 10px;
+}
+
+/*************modal*************/
+.modal{
+    position: fixed;
+    background: rgba(10, 34, 61, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: var(--white-color);
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: var(--blue-color);
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--font-color);
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.modal-button{
+    background: var(--blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+/************media-queries************/
+@media screen and (max-width: 1100px){
+    .header-client-search{
+        gap: 70px;
+    }
+
+    .package-summery-area.space{
+        padding: 15px 4% 0 4%;
+    }
+
+    .package-nav-area nav ul{
+        justify-content: center;
+        gap: 10px 50px;
+    }
+
+    .package-summery-infos{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .package-summery-three{
+        grid-column: 1/2;
+    }
+
+    .package-summery-two.section{
+        padding: 30px 20px;
+    }
+
+    .more-packages-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .more-packages-area h1 {
+        grid-column: 1/3;
+    }
+
+    .mp-one {
+        grid-column: 1/3;
+    }
+
+    .final-content-one, .final-content-media{
+        padding-top: 0;
+    }
+
+    .final-content-text{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .final-content-media{
+        padding-top: 15px;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    .final-content-list{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-list{
+        padding: 15px 0;
+    }
+
+    .sub-list div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .final-content-form textarea {
+        height: 160px;
+    }
+
+    .final-content-seven {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .header .section{
+        padding: 20px 0;
+    }
+
+    .header-help-vouchers ul {
+        gap: 40px;
+    }
+
+    .header-client {
+        background: var(--blue-color);
+    }
+
+    .header-logo .logo{
+        background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/logos/logo2.png');
+    }
+
+    .header-form, .header-client-cart, .user-access{
+        display: none;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .button-mobile{
+        display: block;
+        border: 0;
+        background: transparent;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .mobile-icon{
+        background-image: url('https://html-e-css8.projetoslucasbargas.com/assets/images/icons/mobile.png');
+        background-position: center;
+        background-size: 100% 100%;
+        width: 19px;
+        height: 19px;
+    }
+
+    .hotel-area{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .hotel-img{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .hotel-package{
+        grid-column: 1/2;
+    }
+
+    .hotel-localization{
+        grid-column: 2/4;
+    }
+
+    .package-nav-area nav ul{
+        justify-content: center;
+        gap: 20px 50px;
+    }
+
+    .package-summery-three .summery-list-one{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .more-packages-area h1 {
+        margin-bottom: 10px;
+    }
+
+    .other-activities-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .header-help-area.flex{
+        align-items: center;
+    }
+
+    .header-help-link{
+        display: block;
+    }
+
+    .header-help-vouchers ul{
+        gap: 20px;
+    }
+
+    .icon-left::before, .icon-left::after{
+        margin-right: 7px;
+    }
+
+    .hotel-avaliation{
+        display: none;
+    }
+
+    .hotel-img{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .hotel-package{
+        grid-column: 1/4;
+        height: auto;
+        padding: 40px 25px;
+    }
+
+    .hotel-localization{
+        grid-column: 1/4;
+    }
+
+    .package-summery-area.space{
+        padding: 30px 4% 0 4%;
+    }
+
+    .package-nav-area nav ul{
+        gap: 15px 50px;
+    }
+
+    .package-summery-three .summery-list-one, .package-summery-three .summery-list-two{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .package-summery-one .package-summery-list, .package-summery-two .package-summery-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .more-packages-area {
+        grid-template-columns: 1fr;
+    }
+
+    .more-packages-area h1 {
+        grid-column: 1/2;
+    }
+
+    .mp-one {
+        display: none;
+    }
+
+    .newsletter-left{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .newsletter-area{
+        padding: 45px 0;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .other-activities-area{
+        grid-template-columns: 1fr;
+    }
+
+    .final-content-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .final-content-seven{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .modal-area{
+        width: 90% !important;
+    }
+
+    .modal-area-content p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .header-help-area.space-between{
+        justify-content: center;
+    }
+
+    .header-help-link{
+        display: none;
+    }
+
+    .header-help-vouchers ul{
+        gap: 30px;
+    }
+
+    .hotel-img-slide{
+        padding: 0 20px;
+    }
+
+    .hotel-name h2{
+        font-size: 1.25rem;
+        gap: 10px;
+    }
+
+    .package-nav-area nav ul{
+        gap: 15px 30px;
+    }
+
+    .newsletter-left h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .final-logo {
+        width: 120px;
+        height: 137px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .more-packages-single {
+        height: 600px;
+    }
+    .mp-price{
+        text-align: center;
+    }
+
+    .mp-price-area{
+        padding-top: 5px;
+        gap: 5px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mp-two .more-packages-txt, .mp-three .more-packages-txt, .mp-four .more-packages-txt, .mp-five .more-packages-txt {
+        padding: 25px 10px;
+    }
+
+    .our-clients-info{
+        top: -30px;
+    }
+
+    .our-clients-info img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .our-clients-text p{
+        text-align: center;
+    }
+
+    .newsletter-area {
+        padding: 60px 0;
+    }
+
+    .newsletter-right input, .newsletter-right button{
+        height: 40px;
+    }
+
+    .newsletter-right input{
+        padding: 0 20px;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .header .section{
+        padding: 15px 0;
+    }
+
+    .header-logo .logo{
+        width: 150px;
+        height: 19px;
+    }
+
+    .hotel-name h2{
+        font-size: 1.10rem;
+        gap: 10px;
+    }
+
+    .hotel-name h2::after{
+        color: var(--white-color);
+        padding: 3px 7px;
+    }
+
+    .hotel-img{
+        height: 350px;
+    }
+
+    .hotel-package{
+        padding: 25px 20px;
+    }
+
+    .room-area h3{
+        font-size: 1rem;
+    }
+
+    .values h2{
+        font-size: 1.25rem;
+    }
+
+    .package-nav-area nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    .package-nav-area li:not(:first-of-type){
+        margin-top: 10px;
+    }
+
+    .package-nav-area ul a{
+        padding-bottom: 10px;
+        font-size: 0.88rem;
+    }
+
+    .package-summery-area > h2{
+        font-size: 1.10rem;
+    }
+
+    .final-content-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .final-content-seven {
+        gap: 20px;
+    }
+
+    .final-content-seven ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .header-logo .logo{
+        width: 140px;
+        height: 17px;
+    }
+
+    .mobile-icon{
+        width: 17px;
+        height: 17px;
+    }
+    
+    .navigation{
+        font-size: 0.75rem;
+    }
+
+    .hotel.section{
+        padding: 0 0 25px 0;
+    }
+
+    .hotel-img-slide{
+        padding: 0 15px;
+    }
+
+    .values h2{
+        font-size: 1.10rem;
+    }
+
+    .sizes h3{
+        gap: 3px;
+    }
+
+    .sizes p{
+        font-size: 0.75rem;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .hotel-name h2::after{
+        display: none;
+    }
+
+    .hotel-package{
+        padding: 20px 15px;
+    }
+
+    .hotel-packages-button a{
+        padding: 10px 16px;
+        font-size: 0.88rem;
+    }
+}

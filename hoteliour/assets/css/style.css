@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --white-color: #ffffff;
+    --purple: #9a3e6f;
+    --purple-hover: #b57d9b;
+    --button-hover: rgb(194, 74, 138);
+    --normal-font: #717171;
+    --bold-color: #424242;
+    --light-gray: #f2f2f2;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.initial-content{
+    padding-top: 15px;
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/bg/initial_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.social-medias{
+    display: flex;
+    gap: 12px;
+    padding-left: 15px;
+}
+
+.social-medias figure img{
+    width: 26px;
+}
+
+.app-navigation{
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-logo{
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/more_imgs/logo.png');
+    width: 200px;
+    height: 66px;
+}
+
+.app-menu{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.app-menu ul{
+    display: flex;
+}
+
+.app-menu ul li:first-of-type a{
+    background-color: var(--purple);
+    color: var(--white-color);
+}
+
+.app-menu ul a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    color: var(--normal-font);
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+.app-menu ul a:hover{
+    background-color: var(--purple-hover);
+    color: var(--white-color);
+}
+
+.app-menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+
+.satisfaction{
+    background-color: var(--light-gray);
+    padding: 30px 0;
+}
+
+.satisfaction-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.satisfaction-text strong{
+    color: var(--bold-color);
+}
+
+.satisfaction-text p{
+    font-size: 0.94rem;
+    color: var(--normal-font);
+}
+
+.rooms{
+    padding: 60px 0 54px 0;
+    background-color: var(--white-color);
+}
+
+.rooms-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.rooms-area img{
+    width: 100%;
+    height: auto;
+}
+
+.rooms-area a{
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.rooms-area a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 2;
+}
+
+.rooms-area a:hover::after{
+    opacity: 1;
+}
+
+.room-loupe{
+    display: block;
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/icons/loupe.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 70px;
+    height: 72px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 3;
+}
+
+.rooms-area a:hover .room-loupe{
+    opacity: 1;
+}
+
+.room-viewer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -6px;
+    z-index: 4;
+    background-color: var(--light-gray);
+}
+
+.room-viewer-text{
+    padding: 5px 0 5px 10px;
+}
+
+.room-viewer-text h2{
+    color: var(--bold-color);
+    font-weight: 400;
+    font-size: 0.88rem;
+}
+
+.room-viewer-text p{
+    color: var(--bold-color);
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.room-viewer-eye{
+    border: 0;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button-eye{
+    display: block;
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/icons/eye.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 13px;
+}
+
+.room-viewer-eye:hover{
+    background-color: var(--button-hover);
+}
+
+.others-rooms{
+    padding: 50px 0 44px 0;
+    background-color: var(--light-gray);
+}
+
+.others-rooms .rooms-area{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rooms-single .room-viewer{
+    background-color: var(--white-color);
+}
+
+.our-services{
+    padding: 60px 0;
+    background-color: var(--white-color);
+}
+
+.our-services-title{
+    font-weight: 300;
+    color: var(--purple);
+    font-size: 1.63rem;
+}
+
+.our-services-area{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.our-services-single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.our-services-single img{
+    width: 140px;
+    height: 140px;
+}
+
+.our-services-single a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.our-services-single a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.our-services-single > a:hover::after{
+    opacity: 1;
+}
+
+.our-service-one a::after{
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/services/restaurant-hover.png');
+}
+
+.our-service-two a::after{
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/services/pool-hover.png');
+}
+
+.our-service-three a::after{
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/services/cruises-hover.png');
+}
+
+.our-service-four a::after{
+    background-image: url('https://html-e-css3.projetoslucasbargas.com/assets/images/services/animation-hover.png');
+}
+
+.our-services-content > a{
+    color: var(--bold-color);
+    font-weight: 500;
+    font-size: 1.13rem;
+    padding: 10px 0;
+}
+
+.our-services-content p{
+    font-size: 0.82rem;
+    color: var(--normal-font);
+}
+
+.our-service-link{
+    padding-top: 20px;
+}
+
+.our-service-link a{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--purple);
+}
+
+.app-resume{
+    background-color: #39192a;
+    padding: 20px 0;
+}
+
+.app-resume-area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.app-resume h2{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.13rem;
+    margin-bottom: 15px;
+}
+
+.app-resume-address{
+    margin-top: 15px;
+}
+
+.app-resume-contact p, .app-resume-address p{
+    color: var(--white-color);
+    font-size: 0.82rem;
+}
+
+.app-resume-contact a{
+    color: var(--purple-hover);
+    font-size: 0.82rem;
+    transition: 0.6s;
+}
+
+.app-resume-contact a:hover{
+    color: var(--purple);
+}
+
+.app-resume-content p{
+    color: var(--white-color);
+    font-size: 0.82rem;
+}
+
+.app-resume-content ul li a{
+    color: var(--purple-hover);
+    font-size: 0.82rem;
+    transition: 0.6s;
+}
+
+.app-resume-content ul li:not(:first-of-type){
+    margin-top: 5px;
+}
+
+.app-resume-content ul li a:hover{
+    color: var(--purple);
+}
+
+.app-resume-gallery{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 60px;
+}
+
+.app-resume-gallery figure img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.creator-info{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.creator-info p, a{
+    color: #23303E;
+}
+
+.creator-info a{
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.creator-info a:hover{
+    text-decoration: underline;
+}
+
+.modal{
+    position: fixed;
+    background: RGBA(155, 63, 112, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: var(--white-color);
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: var(--purple);
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: #000000;
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.modal-button{
+    background: var(--purple);
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.modal-button:hover{
+    background: var(--purple-hover);
+}
+
+/***********media screens***********/
+@media screen and (max-width: 1100px){
+    .app-menu ul{
+        display: none;
+    }
+
+    .app-menu-mobile{
+        display: block;
+        border-top: 2px solid var(--purple);
+        width: 20px;
+    }
+
+    .app-menu-mobile::before, .app-menu-mobile::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: var(--purple);
+        margin-top: 4px;
+    }
+
+    .initial-content{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .app-resume-area{
+        grid-template-columns: 1fr;
+    }
+
+    .app-resume-gallery{
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .rooms-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .others-rooms .rooms-area{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .our-services-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .modal-area-content p{
+        text-align: center;
+    }
+
+    .initial-content{
+        height: 80vh;
+    }
+
+    .others-rooms .rooms-area{
+        grid-template-columns: 1fr;
+    }
+    
+    .our-services-area{
+        grid-template-columns: 1fr;
+    }
+
+    .our-services-single img{
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-area{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 340px){
+    body{
+        font-size: 70%;
+    }
+
+    .app-logo{
+        width: 150px;
+        height: 50px;
+        background-size: cover;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}

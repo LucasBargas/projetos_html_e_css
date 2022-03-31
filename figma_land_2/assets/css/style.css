@@ -1,0 +1,859 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: 'Circular Black';
+    src: url('https://html-e-css6.projetoslucasbargas.com/assets/fonts/CircularStd-Black.otf');
+}
+
+@font-face{
+    font-family: 'Circular Book';
+    src: url('https://html-e-css6.projetoslucasbargas.com/assets/fonts/CircularStd-Book.otf');
+}
+
+@font-face{
+    font-family: 'Circular Bold';
+    src: url('https://html-e-css6.projetoslucasbargas.com/assets/fonts/CircularStd-Bold.otf');
+}
+
+:root{
+    --white-color: #ffffff;
+    --white-color-hover: #fcf6f6;
+    --dark-blue: #182333;
+    --sky-blue: #00B6F0;
+    --sky-blue-hover: #07a6db;
+    --title-color: #20262A;
+    --text-color: #5C5C5C;
+    --yellow-color: #F3CD03;
+}
+
+body{
+    font-family: 'Circular Book';
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.space{
+    padding: 0 4%;
+}
+
+.text-container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section-pattern{
+    padding: 60px 0;
+}
+
+.call-to-action{
+    border-radius: 25px;
+    padding: 14px 45px;
+    display: inline-block;
+    font-family: 'Circular Bold';
+    transition: 0.5s;
+}
+
+.border-button{
+    color: var(--sky-blue);
+    border: 1px solid var(--sky-blue);
+}
+
+.simple-button{
+    color: var(--text-color);
+    background: var(--white-color);
+}
+
+.border-button:hover, .simple-button:hover{
+    background: var(--white-color-hover);
+}
+
+.blue-button{
+    color: var(--white-color);
+    background: var(--sky-blue);
+}
+
+.blue-button:hover{
+    background: var(--sky-blue-hover);
+}
+
+p, a, h2, h3{
+    letter-spacing: 0.6px;
+}
+
+p{
+    color: var(--text-color);
+    line-height: 26px;
+}
+
+h2, h3{
+    color: var(--title-color);
+}
+
+.header{
+    padding: 40px 0 20px 0;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-nav-brand{
+    display: block;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/more_imgs/app_logo.png');
+    background-position: center;
+    background-size: cover;
+    width: 186px;
+    height: 58px;
+}
+
+.header-nav-center nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav-center a{
+    color: var(--title-color);
+    padding: 16px 2px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.main-bg{
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/header_bg.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-bg::after{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/bg_illustation_blue.png');
+    width: 246px;
+    height: 633px;
+    top: 10%;
+    left: 0;
+}
+
+.main-bg::before{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/bg_illustation_yellow.png');
+    width: 324px;
+    height: 476px;
+    top: 22%;
+    right: 0;
+}
+
+.main-bg-content{
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-bg-text h2{
+    color: var(--dark-blue);
+    font-size: 3rem;
+}
+
+.main-bg-text p{
+    margin-top: 25px;
+}
+
+.main-bg-buttons{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-bg-illustation{
+    padding-top: 40px;
+}
+
+.main-bg-illustation img{
+    max-width: 100%;
+}
+
+.fastest .text-container, .our-services .text-container, .testimonials .text-container{
+    max-width: 800px;
+}
+
+.fastest-content{
+    text-align: center;
+}
+
+.fastest-content h3{
+    color: var(--yellow-color);
+    font-size: 1.75rem;
+    font-family: 'Circular Book';
+}
+
+.fastest-content h2{
+    font-size: 3rem;
+    margin: 25px 0;
+}
+
+.fastest-content p{
+    max-width: 350px;
+    display: inline-block;
+}
+
+.fastest-buttons{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.company-infos{
+    position: relative;
+}
+
+.company-infos::after{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/img_illustration_yellow.png');
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 501px;
+    bottom: 0;
+    left: 0;
+}
+
+.company-infos::before{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/img_illustration_blue.png');
+    background-position: center;
+    background-size: cover;
+    width: 281px;
+    height: 497px;
+    top: 0;
+    right: 0;
+}
+
+.company-infos-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.company-infos-single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-infos-text{
+    max-width: 310px;
+}
+
+.company-infos-text h3{
+    font-size: 2rem;
+    font-family: 'Circular Book';
+}
+
+.company-infos-text p{
+    margin: 25px 0;
+}
+
+.company-infos-single img{
+    width: 100%;
+    height:  auto;
+    object-fit: cover;
+}
+
+.company-infos-link a{
+    display: inline-block;
+    color: var(--sky-blue);
+    text-transform: uppercase;
+}
+
+.our-services-content{
+    text-align: center;
+}
+
+.our-services-content h2{
+    font-size: 3rem;
+}
+
+.our-services-content > p{
+    margin-top: 20px;
+}
+
+.our-services-bar{
+    padding-top: 80px;
+}
+
+.our-services-bar img{
+    max-width: 100%;
+}
+
+.bar-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-info h3, .bar-info p{
+    color: var(--text-color);
+    font-size: 0.82rem;
+}
+
+.our-services-button{
+    padding-top: 40px;
+}
+
+.testimonials{
+    position: relative;
+}
+
+.testimonials.section-pattern{
+    padding: 70px 0 90px 0;
+}
+
+.testimonials::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/img_illustration_darkblue.png');
+    background-position: center;
+    background-size: cover;
+    width: 338px;
+    height: 261px;
+}
+
+.testimonials::after{
+    content: '';
+    position: absolute;
+    left: 15%;
+    top: 57%;
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/img_darkblue.png');
+    background-position: center;
+    background-size: cover;
+    width: 111px;
+    height: 115px;
+}
+
+.testimonials-area{
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.testimonials-area h2{
+    font-size: 2rem;
+}
+
+.testimonials-client{
+    padding-top: 70px;
+}
+
+.testimonials-client p{
+    margin: 60px 0 50px 0;
+    max-width: 480px;
+    display: inline-block;
+}
+
+.testimonials-button{
+    padding-top: 50px;
+}
+
+.pricing{
+    background: var(--dark-blue);
+}
+
+.pricing.section-pattern{
+    padding: 100px 0;
+}
+
+.pricing .text-container{
+    max-width: 900px;
+}
+
+.pricing-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-content h2, .pricing-content p{
+    color: var(--white-color);
+}
+
+.pricing-left h2{
+    font-size: 2.38rem;
+}
+
+.pricing-left p{
+    max-width: 370px;
+}
+
+.pricing-left p:last-of-type{
+    margin-top: 20px;
+}
+
+.pricing-right p:last-of-type{
+    margin: 5px 0 20px 0;
+}
+
+.more-info{
+    background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/last_bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.more-info-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+}
+
+.more-info-left{
+    text-align: center;
+}
+
+.more-info-left h2{
+    font-size: 1.5rem;
+}
+
+.more-info-right p:first-of-type{
+    margin-bottom: 30px;
+}
+
+.more-info-button{
+    padding-top: 40px;
+}
+
+.final-app.section-pattern{
+    padding: 60px 0 40px 0;
+}
+
+.final-app-content .header-nav-center{
+    display: block;
+}
+
+.final-app-content .header-nav-right ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.final-app-content .header-nav-right ul img{
+    width: 34px;
+}
+
+.creator-infos{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.creator-infos a{
+    color: var(--dark-blue);
+    font-family: 'Circular Bold';
+}
+
+.creator-infos a:hover{
+    text-decoration: underline;
+}
+
+.original-layout{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal{
+    position: fixed;
+    background: RGBA(0, 182, 240, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: var(--white-color);
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: var(--sky-blue);
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: #000000;
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    color: var(--sky-blue);
+    font-weight: 700;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.modal-button{
+    background: var(--sky-blue);
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.modal-button:hover{
+    background: #0a97f5;
+}
+
+/************media querie************/
+@media screen and (max-width: 1100px){
+    .main-bg::after{
+        background-position: contain;
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+        top: 10%;
+    }
+    
+    .main-bg::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/bg_illustation_yellow.png');
+        top: 22%;
+    }
+
+    .final-app-content .header-nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .final-app-content .header-nav-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final-app-content .header-nav-center ul{
+        flex-direction: column;
+        gap: 30px;
+        padding: 70px 0 90px 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .header-nav-center{
+        display: none;
+    }
+
+    .header-nav-right{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .menu-mobile{
+        display: block;
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/icons/mobile.png');
+        background-position: center;
+        width: 28px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    .main-bg::after{
+        background-size: 50% 100%;
+    }
+    
+    .main-bg::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_illustation_yellow.png');
+        top: 30%;
+        width: 95px;
+        height: 476px;
+    }
+
+    .company-infos-area{
+        row-gap: 80px;
+    }
+
+    .company-infos::after{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_yellow.png');
+        width: 150px;
+        height: 401px;
+    }
+    
+    .company-infos::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_blue.png');
+        width: 140px;
+        height: 397px;
+    }
+
+    .testimonials::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_illustration_darkblue.png');
+        width: 206px;
+        height: 261px;
+    }
+    
+    .testimonials::after{
+        left: 7%;
+        top: 20%;
+    }
+
+    .pricing-left p{
+        max-width: 330px;
+    }
+
+    .more-info-content{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .more-info-right p:first-of-type{
+        margin-bottom: 20px;
+    }
+    
+    .more-info-button{
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .modal-area-content p{
+        text-align: center;
+    }
+
+    .header{
+        padding: 30px 0 20px 0;
+    }
+    
+    .header-nav-right .call-to-action{
+        display: none;
+    }
+
+    .main-bg-buttons, .fastest-buttons{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .company-infos-area{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .company-infos-text{
+        max-width: 330px;
+    }
+
+    .company-infos-single:nth-of-type(1){
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .company-infos-single:nth-of-type(2){
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .company-infos-single:nth-of-type(3){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .company-infos-single:nth-of-type(4){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .company-infos::after{
+        bottom: 21%;
+    }
+
+    .testimonials::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_darkblue.png');
+        width: 120px;
+        height: 200px;
+    }
+    
+    .testimonials::after{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_img.png');
+        left: 6%;
+        top: 15%;
+        width: 80px;
+        height: 83px;
+    }
+    
+    .pricing-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pricing-left p:last-of-type{
+        margin: 30px 0 80px 0;
+    }
+
+    .pricing-info{
+        padding-bottom: 20px;
+    }
+
+    .pricing-button{
+        padding-top: 30px;
+    }
+
+    .modal-area{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .main-bg-content{
+        padding-top: 50px;
+    }
+
+    .main-bg::after{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_illustation_blue.png');
+        background-size: contain;
+        top: 10%;
+    }
+    
+    .main-bg::before{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_illustation_yellow.png');
+        top: 40%;
+    }
+
+    .testimonials::after{
+        background-image: url('https://html-e-css6.projetoslucasbargas.com/assets/images/bg/mb_decoration.png');
+        left: 0;
+        top: 22%;
+        width: 66px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .main-bg-text h2 {
+        font-size: 2.25rem;
+    }
+
+    .fastest-content h3 {
+        font-size: 1.63rem;
+    }
+
+    .fastest-content h2 {
+        font-size: 2.13rem;
+    }
+
+    .company-infos-text h3{
+        font-size: 1.63rem;
+    }
+
+    .our-services-content h2 {
+        font-size: 2.13rem;
+    }
+
+    .pricing-left h2 {
+        font-size: 2rem;
+    }
+
+    .final-app-content .header-nav-center ul{
+        padding: 50px 0 70px 0;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .main-bg::after{
+        top: 20%;
+        background-size: 40% 100%;
+    }
+}

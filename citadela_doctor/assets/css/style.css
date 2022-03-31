@@ -1,0 +1,747 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --white-color: #ffffff;
+    --pink-color: #ff0072;
+    --blue-color: #2360d1;
+    --light-gray: #f3f4f6;
+    --title-color: #222222;
+    --normal-font: rgba(34, 34, 34, 0.7);
+}
+
+body{
+    color: var(--font-color);
+}
+
+.container{
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.initial-nav{
+    background-color: var(--white-color);
+    padding: 40px 0;
+}
+
+.intiial-nav-area{
+    display: grid;
+    grid-template-areas: 
+    'nav-left nav-right';
+    align-items: center;
+}
+
+.initial-nav-left{
+    grid-area: nav-left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-logo{
+    background: url('https://html-e-css4.projetoslucasbargas.com/assets/images/more_imgs/app_logo.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 51px;
+    height: 51px;
+}
+
+.app-logo-text h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--title-color);
+    line-height: 35px;
+}
+
+.app-logo-text p{
+    font-size: 0.94rem;
+    color: var(--normal-font);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.initial-nav-right{
+    grid-area: nav-right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.initial-nav-right ul{
+    display: flex;
+    gap: 40px;
+}
+
+.initial-nav-right ul li a{
+    color: var(--normal-font);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.initial-nav-right ul li:first-of-type a{
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.initial-nav-right ul li:nth-of-type(2) a{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.initial-nav-right ul li:nth-of-type(2) a::after{
+    content: '';
+    display: block;
+    background: url('https://projetoslucasbargas4.netlify.app/assets/images/icons/down_arrow.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 12px;
+    height: 12px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.initial-bg{
+    display: flex;
+    align-items: center;
+    background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/bgs/initial_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.initial-bg-content{
+    display: flex;
+    gap: 20px;
+}
+
+.initial-bg-left, .initial-bg-right{
+    width: 50%;
+}
+
+.initial-bg-left{
+    display: flex;
+    align-items: center;
+}
+
+.bg-left-area h2{
+    font-size: 3.25rem;
+    color: var(--title-color);
+}
+
+.bg-left-area p{
+    color: var(--normal-font);
+    font-family: 'Noto Sans', sans-serif;
+    margin: 30px 0 60px 0;
+}
+
+.bg-left-area a{
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.13rem;
+    background-color: var(--pink-color);
+    padding: 12px 30px;
+    border-radius: 40px;
+}
+
+.bg-left-area a:hover{
+    text-decoration: underline;
+}
+
+.initial-bg-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.initial-bg-right figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.app-infos{
+    background-color: var(--blue-color);
+    padding: 60px 0;
+}
+
+.app-infos-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.app-infos-content{
+    text-align: center;
+    color: var(--white-color);
+}
+
+.app-infos-content .fas{
+    color: var(--white-color);
+}
+
+.app-infos-content h2{
+    font-weight: 400;
+    font-size: 1.38rem;
+    margin: 10px 0;
+}
+
+.app-infos-content p{
+    font-size: 0.88rem;
+}
+
+.app-bg-over{
+    display: flex;
+    align-items: center;
+    background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/bgs/over_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 522px;
+    position: relative;
+    z-index: 1;
+}
+
+.app-bg-over::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3852;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.bg-over-content{
+    position: relative;
+    z-index: 3;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.bg-over-content h2{
+    font-size: 2.63rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bg-over-content p{
+    max-width: 768px;
+    font-family: 'Noto Sans', sans-serif;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.company-sectors{
+    background-color: var(--white-color);
+    padding: 100px 0;
+}
+
+.company-sectors-infos{
+    text-align: center;
+}
+
+.company-sectors-infos h2{
+    font-size: 2rem;
+}
+
+.company-sectors-infos p{
+    max-width: 768px;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--normal-font);
+    margin-top: 20px;
+}
+
+.company-sectors-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    padding-top: 90px;
+    gap: 50px 35px;
+    max-width: 900px;
+}
+
+.company-sectors-single{
+    display: flex;
+    gap: 15px;
+}
+
+.company-sectors-single .fas{
+    color: var(--blue-color);
+}
+
+.company-sectors-text h2{
+    transition: 0.2s;
+}
+
+.company-sectors-text:hover h2{
+    color: var(--blue-color);
+}
+
+.company-sectors-text h2{
+    color: var(--title-color);
+    font-size: 1rem;
+}
+
+.company-sectors-text p{
+    color: var(--normal-font);
+    font-size: 0.82rem;
+    margin-top: 8px;
+}
+
+.departments{
+    background-color: #fdfcfc;
+    padding: 100px 0;
+}
+
+.departments-infos{
+    text-align: center;
+}
+
+.departments-infos h2{
+    font-size: 2rem;
+}
+
+.departments-infos p{
+    max-width: 768px;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--normal-font);
+    margin-top: 20px;
+}
+
+.departments-area{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.departments-single{
+    text-align: center;
+}
+
+.departments-single img{
+    width: 100%;
+    height: auto;
+}
+
+.departments-single h2{
+    font-weight: 400;
+    color: var(--title-color);
+    font-size: 1.38rem;
+    padding: 20px 0;
+}
+
+.departments-single p{
+    font-size: 0.88rem;
+    color: var(--normal-font);
+}
+
+.final-app{
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+
+.final-app .container{
+    display: flex;
+    justify-content: center;
+}
+
+.final-app .initial-nav-right{
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-app .initial-nav-right ul li a{
+    color: var(--title-color);
+}
+
+.final-app .initial-nav-right ul li:first-of-type a{
+    font-weight: 300;
+}
+
+.final-app .initial-nav-right ul li:nth-of-type(2) a::after{
+    display: none;
+}
+
+.final-app .initial-nav-right p{
+    color: var(--normal-font);
+    font-size: 0.88rem;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.final-app .initial-nav-right p a, .original-layout{
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+.original-layout{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal{
+    position: fixed;
+    background: RGBA(35, 97, 210, 0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: var(--white-color);
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: RGB(35, 97, 210);
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: #000000;
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    color: RGB(35, 97, 210);
+    font-weight: 700;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.modal-button{
+    background: RGB(35, 97, 210);
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.modal-button:hover{
+    background: rgb(61, 128, 221);
+}
+
+/***********media-screens***********/
+@media screen and (max-width: 1920px){
+    .initial-bg{
+        height: calc(70vh - 138px);
+        min-height: 500px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px){
+    .initial-bg{
+        height: calc(100vh - 138px);
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .container{
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .initial-bg{
+        height: calc(50vh - 138px);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .initial-nav-right ul{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+        background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/menu-mobile.png');
+        background-position: center;
+        background-size: 100% 100%;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+    }
+
+    .initial-bg{
+        height: auto;
+        min-height: 0;
+        padding: 70px 0;
+    }
+
+    .initial-bg-content{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .initial-bg-left, .initial-bg-right{
+        width: 100%;
+    }
+    
+    .initial-bg-left{
+        display: flex;
+        align-items: center;
+    }
+
+    .initial-bg-right{
+        gap: 30px;
+    }
+
+    .app-infos-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .departments-area{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 35px;
+    }
+
+    .final-app .initial-nav-right ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 0 4%;
+    }
+
+    .modal-area-content p{
+        text-align: center;
+    }
+
+    .initial-nav{
+        padding: 40px 0;
+    }
+
+    .initial-nav .container{
+        padding: 0;
+    }
+
+    .intiial-nav-area{
+        grid-template-areas:
+        'nav-right nav-right' 
+        'nav-left nav-left';
+    }
+
+    .initial-nav-left{
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .app-logo-text{
+        text-align: center;
+    }
+
+    .menu-mobile{
+        background-image: url('https://html-e-css4.projetoslucasbargas.com/assets/images/menu-mobile-2.png');
+        width: 60px;
+        height: 39px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .initial-bg-right{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .title-section h2{
+        font-size: 2.25rem;
+    }
+
+    .app-infos-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .company-sectors-area{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: none;
+    }
+
+    .departments-area{
+        grid-template-columns: 1fr;
+        gap: 60px 35px;
+    }
+
+    .final-app{
+        padding: 60px 0;
+    }
+
+    .final-app .initial-nav-right ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .final-app .initial-nav-right ul li{
+        text-align: center;
+    }
+
+    .final-app .initial-nav-right ul li a{
+        font-size: 0.88rem;
+    }
+
+    .final-app .initial-nav-right ul li:nth-of-type(2) a{
+        display: block;
+    }
+
+    .modal-area{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .initial-bg{
+        padding: 50px 0;
+    }
+
+    .company-sectors, .departments{
+        padding: 80px 0;
+    }
+
+    .company-sectors-area{
+        grid-template-columns: 1fr;
+        padding-top: 70px;
+        gap: 40px 0;
+        max-width: none;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .initial-nav{
+        padding: 30px 0;
+    }
+
+    .app-logo{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .app-logo-text h2{
+        font-size: 1.63rem;
+    }
+
+    .menu-mobile{
+        width: 50px;
+        height: 33px;
+    }
+
+    .title-section h2{
+        font-size: 1.88rem;
+    }
+}
+
+@media screen and (max-width: 250px){
+    .bg-left-area a{
+        font-size: 0.88rem;
+    }
+
+    .initial-bg {
+        padding: 30px 0;
+    }
+
+    .bg-left-area p {
+        margin: 20px 0 40px 0;
+    }
+
+    .app-bg-over{
+        padding: 30px 0;
+        height: auto;       
+    }
+}

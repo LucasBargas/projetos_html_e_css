@@ -1,0 +1,1208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --bg-principal-color: #ffffff;
+    --blue: #458FF6;
+    --light-blue: #67C3F3;
+}
+
+body{
+    background-color: var(--bg-principal-color);
+}
+
+p{
+    line-height: 22px;
+    color: #7D7987;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.initial-nav{
+    padding-top: 25px;
+}
+
+.initial-nav-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.initial-nav-left, .initial-nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.app-logo{
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/initial_logo.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 41px;
+}
+
+.initial-nav-right nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.initial-nav-right nav ul li{
+    margin-left: 35px;
+}
+
+.initial-nav-right nav ul li a{
+    text-decoration: none;
+    color: #1F1534;
+}
+
+.initial-nav-right nav ul li:first-of-type a{
+    font-weight: 700;
+}
+
+.menu-mobile{
+    display: none;
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/icons/menu_mobile.svg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.initial-app-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.initial-app-content::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg-balls.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 82px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+
+.initial-app-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.initial-app-left, .initial-app-right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    z-index: 1;
+}
+
+.initial-app-text{
+    max-width: 450px;
+}
+
+.initial-app-text h2{
+    font-size: 3rem;
+}
+
+.initial-app-text p{
+    margin: 20px 0 35px 0;
+}
+
+.initial-app-button a{
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+.call-to-action a{
+    border-radius: 20px;
+    padding: 11px 26px;
+    border: 1px solid var(--blue);
+}
+
+.initial-app-right figure img{
+    width: 100%;
+    height: auto;
+}
+
+.our-services{
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.our-services::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg_decoration.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 700px;
+    height: 550px;
+    position: absolute;
+    top: 14.5%;
+    left: 0;
+}
+
+.our-services-title{
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 1.88rem;
+}
+
+.section-title::after{
+    content: '';
+    display: block;
+    width: 56px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #000000;
+}
+
+.our-services .section-title::after{
+    margin: 20px auto 0 auto;
+}
+
+.our-services-text{
+    text-align: center;
+    padding: 20px 0 70px 0;
+}
+
+.our-services-text p{
+    display: inline-block;
+    max-width: 900px;
+}
+
+.section-text p{
+    color: #7D7987;
+}
+
+.our-services-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+.our-services-area::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 132px;
+    height: 115px;
+    position: absolute;
+    top: 38%;
+    right: -4.5%;
+}
+
+.our-services-single{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 45px 30px;
+    z-index: 2;
+    box-shadow: 0px 0px 28px 3px rgba(229,229,229,0.75);
+}
+
+.services-single-content h2{
+    font-size: 1.38rem;
+    margin: 25px 0 15px 0;
+}
+
+.services-single-content figure img{
+    width: 20%;
+    height: auto;
+}
+
+.our-services-button{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.our-services-button a, .services-details-button a{
+    color: var(--blue);
+}
+
+.services-details{
+    padding: 40px 0 100px 0;
+    position: relative;
+}
+
+.services-details::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg-balls.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 82px;
+    height: 115px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.services-details-area{
+    display: grid;
+    grid-template-areas: 
+    'img-one txt-one'
+    'txt-two img-two';
+    row-gap: 100px;
+}
+
+.services-image-one{
+    grid-area: img-one;
+}
+
+.details-text-one{
+    grid-area: txt-one;
+}
+
+.services-image-two{
+    grid-area: img-two;
+}
+
+.details-text-two{
+    grid-area: txt-two;
+}
+
+.flex-details{
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.details-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 305px;
+}
+
+.details-text-content p{
+    margin: 20px 0 40px 0;
+}
+
+.services-image-one figure img, .services-image-two figure img{
+    width: 100%;
+    height: auto;
+}
+
+
+.partners-depoiments{
+    padding: 50px 0 100px 0;
+}
+
+.depoiments-slide-area{
+    margin: 0 auto;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    width: 80%;
+    padding: 40px 70px;
+    position: relative;
+}
+
+.depoiments-slide-area::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg-balls-two.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 75px;
+    height: 115px;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+}
+
+.depoiments-title{
+    text-align: center;
+    color: #ffffff;
+}
+
+.depoiments-text .section-title::after{
+    background-color: #ffffff;
+    margin: 20px auto 0 auto;
+}
+
+.data-depoiments{
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+}
+
+.data-people, .data-text{
+    width: 50%;
+}
+
+.data-people{
+    display: flex;
+    align-items: center;
+}
+
+.data-people figure img{
+    width: 133px;
+    height: 133px;
+}
+
+.data-people-info{
+    padding-left: 20px;
+}
+
+.data-people-info h2{
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.data-people p, .data-text p{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.data-text{
+    padding-left: 25px;
+}
+
+.slide-controller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.arrow-slide{
+    display: flex;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 29px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.arrow-left{
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/icons/arrow_left.png');
+    margin-right: 50px;
+}
+
+.arrow-right{
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/icons/arrow_right.png');
+    margin-left: 50px;
+}
+
+.slide-balls{
+    display: flex;
+}
+
+.slide-balls span{
+    display: flex;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.slide-balls span:first-of-type{
+    background-color: #5B9BF3;
+}
+
+.slide-balls span:not(:first-of-type){
+    background-color: #c3d3e9;
+}
+
+.latest-articles{
+    padding: 30px 0 100px 0;
+    position: relative;
+}
+
+.latest-articles::after{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg_decoration_two.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 700px;
+    height: 550px;
+    top: 12%;
+    right: 0;
+}
+
+.latest-articles-title{
+    text-align: center;
+}
+
+.latest-articles .section-title::after{
+    margin: 20px auto 0 auto;
+}
+
+.latest-articles-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.latest-articles-area::after{
+    content: '';
+    position: absolute;
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 132px;
+    height: 115px;
+    top: 10px;
+    left: -50px;
+}
+
+.latest-articles-single{
+    border-radius: 20px;
+    box-shadow: 0px 0px 28px 3px rgba(229,229,229,0.75);
+    z-index: 4;
+    background-color: #ffffff;
+}
+
+.latest-articles-single figure img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.latest-articles-content{
+    padding: 20px 25px 30px 25px;
+}
+
+.latest-articles-content h2{
+    font-size: 1.25rem;
+}
+
+.latest-articles-content p{
+    margin-top: 10px;
+}
+
+.article-link{
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.latest-articles-content a{
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+}
+
+.latest-articles-content a::after{
+    content: '';
+    display: flex;
+    align-items: center;
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/icons/link_arrow.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 9px;
+    margin-left: 10px;
+}
+
+.latest-articles-button{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.latest-articles-button a{
+    color: var(--blue);
+}
+
+.final-app{
+    padding: 80px 0;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    position: relative;
+}
+
+.final-app::after{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/footer_balls.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 76px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.final-app::before{
+    content: '';
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 132px;
+    height: 115px;
+    top: -21%;
+    right: 5%;
+    position: absolute;
+}
+
+.final-app-area{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+}
+
+.final-app-single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final-app-single h2{
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.footer-app-logo, .final-app-single h2{
+    margin-bottom: 20px;
+}
+
+.final-app-single p, .final-app-single a{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.87rem;
+}
+
+.footer-app-logo{
+    display: flex;
+    background-image: url('https://html-e-css1.projetoslucasbargas.com/assets/images/initial_logo.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 41px;
+}
+
+.app-copy{
+    padding-top: 8px;
+}
+
+.app-copy a{
+    font-weight: 700;
+}
+
+.app-copy a:hover{
+    text-decoration: underline;
+}
+
+.app-copy p:last-of-type{
+    padding-top: 20px;
+}
+
+.final-app-single nav ul{
+    list-style: none;
+}
+
+.final-app-single nav ul li:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.original-layout{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.modal{
+    position: fixed;
+    background: rgba(69, 143, 247,0.9);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsModal.active{
+    display: flex;
+}
+
+.modal-area{
+    width: 600px;
+    height: auto;
+    background: var(--bg-principal-color);
+    border-radius: 10px;
+    animation: modalAnimation 0.6s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes modalAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-button{
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    align-self: flex-end;
+    color: var(--blue);
+    padding: 10px 15px;
+    margin: 4px;
+}
+
+.modal-area-content{
+    padding: 15px 15px 0 15px;
+}
+
+.modal-area-content h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-area-content p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.modal-area-content span, .modal-area-content a{
+    color: #000000;
+    font-weight: 700;
+}
+
+.button-repo{
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.button-repo a{
+    display: inline-block;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.button-repo a:hover{
+    text-decoration: underline;
+}
+
+.close-button-two{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.modal-button{
+    background: var(--blue);
+    color: var(--bg-principal-color);
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.modal-button:hover{
+    background: #3bb1ec;
+}
+
+/*******media-querie******/
+@media screen and (min-width: 1537px) and (max-width: 1920px){
+    .container{
+        max-width: 1536px;
+    }
+
+    .initial-app-content{
+        height: calc(85vh - 66px);
+        min-height: 702px;
+    }
+} 
+
+@media screen and (min-width: 1367px) and (max-width: 1536px){
+    .initial-app-content{
+        height: calc(80vh - 66px);
+        min-height: 702px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1366px){
+    .initial-app-content{
+        height: calc(100vh - 66px);
+        min-height: 550px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .container{
+        max-width: 1100px;
+    }
+
+    .initial-app-content{
+        height: calc(100vh - 66px);
+        min-height: 550px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .initial-nav{
+        padding-top: 35px;
+    }
+
+    .initial-app-content{
+        height: calc(85vh - 66px);
+        min-height: 1095.09px;
+    }
+
+    .our-services-area::after{
+        top: 38%;
+        right: -1.5%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .initial-app-area{
+        flex-direction: column-reverse;
+    }
+    
+    .initial-app-left, .initial-app-right{
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .initial-app-text{
+        padding-top: 50px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .initial-nav-right nav ul{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    .data-depoiments{
+        padding-top: 45px;
+        flex-direction: column;
+    }
+    
+    .data-people, .data-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .data-people{
+        flex-direction: column;
+    }
+
+    .data-people figure img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .data-people-info{
+        padding-left: 0;
+    }
+
+    .data-text{
+        padding: 15px 0 20px 0;
+    }
+
+    .latest-articles-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .initial-app-content{
+        height: calc(100vh - 66px);
+    }
+
+    .our-services::after{
+        top: 12%;
+        left: 0;
+    }
+
+    .our-services-area{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .our-services-area::after{
+        right: 0;
+        top: 92%;
+    }
+
+    .final-app::after{
+        display: none;
+    }
+
+    .final-app::before {
+        top: -15%;
+    }
+
+    .final-app-area{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .final-app-single:nth-of-type(1){
+        grid-column: 1/4;
+    }
+
+    .final-app-single{
+        align-items: flex-start;
+    }
+    
+    .app-copy {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .our-services::after, .latest-articles::after{
+        display: none;
+    }
+
+    .services-details-area{
+        grid-template-areas: 
+        'img-one' 
+        'txt-one'
+        'img-two'
+        'txt-two';
+        row-gap: 70px;
+    }
+
+    .services-details-title{
+        text-align: center;
+    }
+
+    .services-details-area .section-title::after{
+        margin: 20px auto 0 auto;
+    }
+
+    .details-text-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 600px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .depoiments-slide-area{
+        width: 100%;
+    }
+
+    .depoiments-slide-area::after{
+        top: 30%;
+        right: 0;
+    }
+
+    .latest-articles-area{
+        grid-template-columns: 1fr;
+    }
+
+    .modal-area{
+        width: 90%;
+    }
+
+    .modal-area-content p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .initial-app-content{
+        min-height: 958px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    p{
+        font-size: 0.88rem;
+        line-height: 20px;
+    }
+    
+    .container{
+        padding: 0 4%;
+    }
+
+    .initial-app-content::after{
+        width: 65px;
+        height: 91px;
+    }
+
+    .initial-app-text h2{
+        font-size: 2rem;
+    }
+
+    .our-services{
+        padding: 30px 0 80px 0;
+    }
+
+    .our-services-area{
+        grid-template-columns: 1fr;
+    }
+
+    .our-services-area::after{
+        display: none;
+    }
+
+    .partners-depoiments{
+        padding: 15px 0 100px 0;
+    }
+
+    .latest-articles-area::after{
+        left: 0;
+        top: 5px;
+    }
+
+    .depoiments-slide-area{
+        padding: 20px 30px;
+    }
+
+    .latest-articles-area{
+        gap: 40px;
+    }
+
+    .latest-articles-content{
+        padding: 40px 25px 50px 25px
+    }
+
+    .final-app{
+        padding: 50px 0;
+    }
+
+    .final-app::before {
+        top: -7%;
+    }
+
+    .final-app-area{
+        grid-template-columns: 1fr;
+    }
+
+    .final-app-single:nth-of-type(1){
+        grid-column: 1/1;
+    }
+
+    .final-app-single{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .final-app-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-copy p:last-of-type{
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 385px) and (max-width: 390px){
+    .initial-app-content{
+        height: calc(85vh - 66px);
+        min-height: none;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .initial-app-content{
+        height: calc(100vh - 66px);
+        min-height: none;
+    }
+
+    .initial-app-right figure img{
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .initial-nav{
+        padding-top: 20px;
+    }
+
+    .app-logo{
+        width: 145px;
+        height: 37px;
+    }
+
+    .initial-app-content{
+        height: calc(100vh - 57px);
+    }
+
+    .initial-app-text h2, .section-title h2{
+        font-size: 1.4rem;
+    }
+
+    .initial-app-right figure img{
+        width: 85%;
+        height: auto;
+    }
+
+    .services-single-content h2{
+        font-size: 1.2rem;
+    }
+
+    .services-details::after{
+        top: 43%;
+    }
+
+    .depoiments-slide-area::after{
+        width: 50px;
+        height: 77px;
+        top: 30%;
+        right: 5px;
+    }
+
+    .arrow-left{
+        margin-right: 30px;
+    }
+    
+    .arrow-right{
+        margin-left: 30px;
+    }
+    
+    .slide-balls span{
+        margin: 0 7px;
+    }
+
+    .latest-articles-area::after{
+        top: 20px;
+    }
+
+    .close-button{
+        font-size: 1.38rem;
+    }
+
+    .modal-area-content h2{
+        font-size: 1.25rem;
+    }
+
+    .modal-area-content p, .modal-button{
+        font-size: 0.88rem;
+    }
+}
+
+@media screen and (min-width: 215px) and (max-width: 276px){
+    .initial-app-content{
+        height: calc(90vh - 50px);
+    }
+}
+
+@media screen and (max-width: 276px){
+    .initial-nav{
+        padding-top: 17px;
+    }
+
+    .menu-mobile{
+        height: 16px;
+        width: 16px;
+    }
+
+    .app-logo{
+        width: 130px;
+        height: 33px;
+    }
+
+    .data-people figure img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .arrow-left{
+        margin-right: 22px;
+    }
+    
+    .arrow-right{
+        margin-left: 22px;
+    }
+}
+
+@media screen and (max-width: 230px){
+    p{
+        font-size: 0.82rem;
+        line-height: 17px;
+    }
+
+    .initial-app-content{
+        height: calc(100vh - 50px);
+    }
+
+    .initial-app-right figure img{
+        width: 70%;
+    }
+
+    .initial-app-text{
+        padding-top: 20px;
+    }
+
+    .initial-app-text h2{
+        font-size: 1rem;
+    }
+
+    .initial-app-text p{
+        margin: 10px 0 20px 0;
+    }
+
+    .call-to-action a{
+        font-size: 0.85rem;
+        border-radius: 20px;
+        padding: 8px 20px;
+    }
+
+    .our-services-single{
+        text-align: center;
+        padding: 35px 10px;
+    }
+
+    .services-single-content figure img{
+        width: 40%;
+        height: auto;
+    }
+
+    .services-details::after{
+        display: none;
+    }
+
+    .depoiments-slide-area{
+        padding: 20px 15px;
+    }
+
+    .data-people figure img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .arrow-left, .arrow-right{
+        display: none;
+    }
+    
+    .slide-balls span{
+        margin: 0 10px;
+    }
+}
