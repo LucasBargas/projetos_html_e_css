@@ -16,12 +16,12 @@
 
 @font-face{
     font-family: 'Avenir Book';
-    src: url('../fonts/AvenirLTStd-Book.otf');
+    src: url('https://raw.projetoslucasbargas.com/assets/fonts/AvenirLTStd-Book.otf');
 }
 
 @font-face{
     font-family: 'Avenir Black';
-    src: url('../fonts/AvenirLTStd-Black.otf');
+    src: url('https://raw.projetoslucasbargas.com/assets/fonts/AvenirLTStd-Black.otf');
 }
 
 body{
@@ -123,7 +123,7 @@ p, a, span{
 
 .header-logo{
     display: block;
-    background-image: url('../images/more_imgs/logo.PNG');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/more_imgs/logo.PNG');
     background-size: 100% 100%;
     width: 100px;
     height: 43px;
@@ -151,7 +151,7 @@ p, a, span{
 .cart::after{
     content: '';
     display: block;
-    background-image: url('../images/icons/cart.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/cart.png');
     background-size: 100% 100%;
     width: 16px;
     height: 16px;
@@ -173,7 +173,7 @@ p, a, span{
 
 .main-bg-image{
     margin-top: 163.16px;
-    background-image: url('../images/bg/initial_bg.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/bg/initial_bg.png');
     background-size: cover;
     background-position: center;
     height: 660px;
@@ -460,7 +460,7 @@ p, a, span{
 .chat{
     display: block;
     position: fixed;
-    background-image: url('../images/icons/chat.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/chat.png');
     background-position: center;
     background-size: 100% 100%;
     bottom: 17px;
@@ -698,7 +698,7 @@ p, a, span{
 }
 
 .loupe{
-    background-image: url('../images/icons/loupe.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/loupe.png');
     background-position: center;
     background-size: 100% 100%;
     width: 20px;
@@ -730,7 +730,7 @@ p, a, span{
 .admin::after{
     content: '';
     display: block;
-    background-image: url('../images/icons/crown.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/crown.png');
     background-position: center;
     background-size: 100% 100%;
     width: 18px;
@@ -750,7 +750,7 @@ p, a, span{
 }
 
 .dots{
-    background-image: url('../images/icons/dots.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/dots.png');
     background-position: center;
     background-size: 100% 100%;
     width: 18px;
@@ -759,7 +759,7 @@ p, a, span{
 
 .ball{
     display: block;
-    background-image: url('../images/icons/black-circle.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/black-circle.png');
     background-position: center;
     background-size: 100% 100%;
     width: 3px;
@@ -805,7 +805,7 @@ p, a, span{
 
 .heart{
     display: block;
-    background-image: url('../images/icons/heart.png');
+    background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/heart.png');
     background-position: center;
     background-size: 100% 100%;
     width: 16px;
@@ -1176,7 +1176,7 @@ p, a, span{
 
     .menu-mobile{
         display: block;
-        background-image: url('../images/icons/menu.png');
+        background-image: url('https://raw.projetoslucasbargas.com/assets/images/icons/menu.png');
         background-size: 100% 100%;
         width: 20px;
         height: 20px;

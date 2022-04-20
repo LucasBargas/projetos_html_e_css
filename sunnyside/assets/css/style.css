@@ -18,7 +18,6 @@ body{
     --footer-color: hsl(168, 34%, 41%);
 }
 
-/*font-family: 'Fraunces', serif;*/
 h2{
     font-family: 'Fraunces', serif;
     color: #23303E;
@@ -37,7 +36,7 @@ p{
 }
 
 .initial-content{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/image_header.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/image_header.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -56,7 +55,7 @@ p{
 
 .logo-app{
     display: flex;
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/logo_app.svg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/logo_app.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 124px;
@@ -114,7 +113,7 @@ p{
 
 .mobile-menu{
     display: none;
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/menu_mobile.png');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/menu_mobile.png');
     background-position: center;
     background-size: 100% 100%;
     width: 22px;
@@ -138,7 +137,7 @@ p{
 
 .arrow-down{
     display: flex;
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/arrow_down.svg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/arrow_down.svg');
     background-position: center;
     background-size: 100% 100%;
     width: 36px;
@@ -236,11 +235,11 @@ p{
 }
 
 .benefits-illustration-one{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/egg_illustration.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/egg_illustration.jpg');
 }
 
 .benefits-illustration-two{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/cup_illustration.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/cup_illustration.jpg');
 }
 
 .benefits-illustration-text{
@@ -253,11 +252,11 @@ p{
 }
 
 .benefits-final-one{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/fruit_illustration_one.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/fruit_illustration_one.jpg');
 }
 
 .benefits-final-two{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/fruit_illustration_two.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/fruit_illustration_two.jpg');
 }
 
 .benefits-final-text{
@@ -332,25 +331,25 @@ p{
 }
 
 .illustration-row-one{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_one.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/bg_row_one.jpg');
     background-position: center bottom;
     background-size: cover;
 }
 
 .illustration-row-two{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_two.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/bg_row_two.jpg');
     background-position: center bottom;
     background-size: cover;
 }
 
 .illustration-row-three{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_three.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/bg_row_three.jpg');
     background-position: center bottom;
     background-size: cover;
 }
 
 .illustration-row-four{
-    background-image: url('https://html-e-css2.projetoslucasbargas.com/assets/images/bg_row_four.jpg');
+    background-image: url('https://sunnyside.projetoslucasbargas.com/assets/images/bg_row_four.jpg');
     background-position: center bottom;
     background-size: cover;
 }
