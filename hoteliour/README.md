@@ -1,5 +1,5 @@
 ## Link para visualizar a aplicação
-<https://hoteliour.projetoslucasbargas.com/>
+<https://hoteliour-projetoslucasbargas.netlify.app/>
 
 ### Prints do ínicio da aplicação em Desktop e Mobile
 <a href="https://hoteliour.projetoslucasbargas.com/"><img alt="Print do ínicio da aplicação" src="https://hoteliour.projetoslucasbargas.com/assets/images/illustrations_app/app_example.png"></a>

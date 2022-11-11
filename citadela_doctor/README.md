@@ -1,5 +1,5 @@
 ## Link para visualizar a aplicação
-<https://citadeladoctor.projetoslucasbargas.com/>
+<https://citadela-doctor-projetoslucasbargas.netlify.app/>
 
 ### Link para visualizar o projeto original
 [Clique aqui](https://preview.ait-themes.club/citadela/doctor/)

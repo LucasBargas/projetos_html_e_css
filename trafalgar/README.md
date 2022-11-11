@@ -1,5 +1,5 @@
 ## Link para visualizar a aplicação
-<https://trafalgar.projetoslucasbargas.com/>
+<https://trafalgar-projetoslucasbargas.netlify.app/>
 
 ### Link para visualizar o projeto original
 [Clique aqui](https://www.figma.com/file/Jl5598O06YRp6Wp3QPg87w/Free-Layout-Fig-%2315?node-id=0%3A1)

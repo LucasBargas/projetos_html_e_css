@@ -1,5 +1,5 @@
 ## Link para visualizar a aplicação
-<https://figmaland2.projetoslucasbargas.com/>
+<https://figmaland2-projetoslucasbargas.netlify.app/>
 
 ### Link para visualizar o projeto original
 [Clique aqui](https://www.figma.com/file/TsOl3VufFH9hZo1bVwSvk7/Figma-startup-landing-page-(Community)?node-id=0%3A3517)

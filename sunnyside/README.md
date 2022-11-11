@@ -1,5 +1,5 @@
 ## Link para visualizar a aplicação
-<https://sunnyside.projetoslucasbargas.com/>
+<https://sunnyside-projetoslucasbargas.netlify.app/>
 
 ### Link para visualizar o projeto original
 [Clique aqui](https://williamssam.github.io/sunnyside-landing-page/)
