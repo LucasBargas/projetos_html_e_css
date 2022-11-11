@@ -8,17 +8,17 @@
 
 @font-face{
     font-family: 'Circular Black';
-    src: url('https://figmaland2.projetoslucasbargas.com/assets/fonts/CircularStd-Black.otf');
+    src: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/fonts/CircularStd-Black.otf');
 }
 
 @font-face{
     font-family: 'Circular Book';
-    src: url('https://figmaland2.projetoslucasbargas.com/assets/fonts/CircularStd-Book.otf');
+    src: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/fonts/CircularStd-Book.otf');
 }
 
 @font-face{
     font-family: 'Circular Bold';
-    src: url('https://figmaland2.projetoslucasbargas.com/assets/fonts/CircularStd-Bold.otf');
+    src: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/fonts/CircularStd-Bold.otf');
 }
 
 :root{
@@ -113,7 +113,7 @@ h2, h3{
 
 .header-nav-brand{
     display: block;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/more_imgs/app_logo.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/more_imgs/app_logo.png');
     background-position: center;
     background-size: cover;
     width: 186px;
@@ -135,7 +135,7 @@ h2, h3{
 }
 
 .main-bg{
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/header_bg.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/header_bg.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -144,7 +144,7 @@ h2, h3{
 .main-bg::after{
     content: '';
     position: absolute;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/bg_illustation_blue.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/bg_illustation_blue.png');
     width: 246px;
     height: 633px;
     top: 10%;
@@ -154,7 +154,7 @@ h2, h3{
 .main-bg::before{
     content: '';
     position: absolute;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/bg_illustation_yellow.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/bg_illustation_yellow.png');
     width: 324px;
     height: 476px;
     top: 22%;
@@ -230,7 +230,7 @@ h2, h3{
 .company-infos::after{
     content: '';
     position: absolute;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/img_illustration_yellow.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/img_illustration_yellow.png');
     background-position: center;
     background-size: cover;
     width: 360px;
@@ -242,7 +242,7 @@ h2, h3{
 .company-infos::before{
     content: '';
     position: absolute;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/img_illustration_blue.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/img_illustration_blue.png');
     background-position: center;
     background-size: cover;
     width: 281px;
@@ -337,7 +337,7 @@ h2, h3{
     position: absolute;
     right: 0;
     bottom: 0;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/img_illustration_darkblue.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/img_illustration_darkblue.png');
     background-position: center;
     background-size: cover;
     width: 338px;
@@ -349,7 +349,7 @@ h2, h3{
     position: absolute;
     left: 15%;
     top: 57%;
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/img_darkblue.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/img_darkblue.png');
     background-position: center;
     background-size: cover;
     width: 111px;
@@ -418,7 +418,7 @@ h2, h3{
 }
 
 .more-info{
-    background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/last_bg.png');
+    background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/last_bg.png');
     background-position: center;
     background-size: cover;
 }
@@ -600,7 +600,7 @@ h2, h3{
     }
     
     .main-bg::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/bg_illustation_yellow.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/bg_illustation_yellow.png');
         top: 22%;
     }
 
@@ -635,7 +635,7 @@ h2, h3{
 
     .menu-mobile{
         display: block;
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/icons/mobile.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/icons/mobile.png');
         background-position: center;
         width: 28px;
         height: 16px;
@@ -647,7 +647,7 @@ h2, h3{
     }
     
     .main-bg::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_illustation_yellow.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_illustation_yellow.png');
         top: 30%;
         width: 95px;
         height: 476px;
@@ -658,19 +658,19 @@ h2, h3{
     }
 
     .company-infos::after{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_yellow.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_yellow.png');
         width: 150px;
         height: 401px;
     }
     
     .company-infos::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_blue.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_blue.png');
         width: 140px;
         height: 397px;
     }
 
     .testimonials::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_illustration_darkblue.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_illustration_darkblue.png');
         width: 206px;
         height: 261px;
     }
@@ -752,13 +752,13 @@ h2, h3{
     }
 
     .testimonials::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_darkblue.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_darkblue.png');
         width: 120px;
         height: 200px;
     }
     
     .testimonials::after{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_img.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_img.png');
         left: 6%;
         top: 15%;
         width: 80px;
@@ -794,18 +794,18 @@ h2, h3{
     }
 
     .main-bg::after{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_illustation_blue.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_illustation_blue.png');
         background-size: contain;
         top: 10%;
     }
     
     .main-bg::before{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_illustation_yellow.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_illustation_yellow.png');
         top: 40%;
     }
 
     .testimonials::after{
-        background-image: url('https://figmaland2.projetoslucasbargas.com/assets/images/bg/mb_decoration.png');
+        background-image: url('https://figmaland2-projetoslucasbargas.netlify.app/assets/images/bg/mb_decoration.png');
         left: 0;
         top: 22%;
         width: 66px;

@@ -9,13 +9,13 @@
 @font-face {
     font-family: 'Graphik';
     font-weight: 700;
-    src: url('https://figmaland1.projetoslucasbargas.com/assets/fonts/GraphikBold.otf');
+    src: url('https://figmaland1-projetoslucasbargas.netlify.app/assets/fonts/GraphikBold.otf');
 }
 
 @font-face {
     font-family: 'Graphik';
     font-weight: 400;
-    src: url('https://figmaland1.projetoslucasbargas.com/assets/fonts/GraphikRegular.otf');
+    src: url('https://figmaland1-projetoslucasbargas.netlify.app/assets/fonts/GraphikRegular.otf');
 }
 
 :root {
@@ -48,7 +48,7 @@ p, h3 {
 }
 
 .header {
-    background-image: url('https://figmaland1.projetoslucasbargas.com/assets/images/bg/header_bg.png');
+    background-image: url('https://figmaland1-projetoslucasbargas.netlify.app/assets/images/bg/header_bg.png');
     background-position: center;
     background-size: cover;
     height: 710px;
@@ -76,7 +76,7 @@ p, h3 {
 
 .header-logo {
     display: block;
-    background-image: url('https://figmaland1.projetoslucasbargas.com/assets/images/header_logo.png');
+    background-image: url('https://figmaland1-projetoslucasbargas.netlify.app/assets/images/header_logo.png');
     background-position: center;
     background-size: cover;
     width: 186px;
@@ -807,7 +807,7 @@ p, h3 {
     .menu-mobile {
         display: block;
         cursor: pointer;
-        background-image: url('https://figmaland1.projetoslucasbargas.com/assets/images/icons/mobile.png');
+        background-image: url('https://figmaland1-projetoslucasbargas.netlify.app/assets/images/icons/mobile.png');
         background-position: center;
         width: 40px;
         height: 32px;

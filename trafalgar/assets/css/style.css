@@ -44,7 +44,7 @@ p{
 }
 
 .app-logo{
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/initial_logo.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/initial_logo.png');
     background-position: center;
     background-size: 100% 100%;
     width: 160px;
@@ -71,7 +71,7 @@ p{
 
 .menu-mobile{
     display: none;
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/icons/menu_mobile.svg');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/icons/menu_mobile.svg');
     background-position: center;
     background-size: 100% 100%;
     height: 20px;
@@ -87,7 +87,7 @@ p{
 
 .initial-app-content::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg-balls.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg-balls.png');
     background-position: center;
     background-size: 100% 100%;
     width: 82px;
@@ -144,7 +144,7 @@ p{
 
 .our-services::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg_decoration.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg_decoration.png');
     background-position: center;
     background-size: 100% 100%;
     width: 700px;
@@ -198,7 +198,7 @@ p{
 
 .our-services-area::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg_balls_services.png');
     background-position: center;
     background-size: 100% 100%;
     width: 132px;
@@ -242,7 +242,7 @@ p{
 
 .services-details::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg-balls.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg-balls.png');
     background-position: center;
     background-size: 100% 100%;
     width: 82px;
@@ -314,7 +314,7 @@ p{
 
 .depoiments-slide-area::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg-balls-two.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg-balls-two.png');
     background-position: center;
     background-size: 100% 100%;
     width: 75px;
@@ -388,12 +388,12 @@ p{
 }
 
 .arrow-left{
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/icons/arrow_left.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/icons/arrow_left.png');
     margin-right: 50px;
 }
 
 .arrow-right{
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/icons/arrow_right.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/icons/arrow_right.png');
     margin-left: 50px;
 }
 
@@ -426,7 +426,7 @@ p{
 .latest-articles::after{
     content: '';
     position: absolute;
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg_decoration_two.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg_decoration_two.png');
     background-position: center;
     background-size: 100% 100%;
     width: 700px;
@@ -454,7 +454,7 @@ p{
 .latest-articles-area::after{
     content: '';
     position: absolute;
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg_balls_services.png');
     background-position: center;
     background-size: 100% 100%;
     width: 132px;
@@ -504,7 +504,7 @@ p{
     content: '';
     display: flex;
     align-items: center;
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/icons/link_arrow.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/icons/link_arrow.png');
     background-position: center;
     background-size: 100% 100%;
     width: 15px;
@@ -529,7 +529,7 @@ p{
 
 .final-app::after{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/footer_balls.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/footer_balls.png');
     background-position: center;
     background-size: 100% 100%;
     width: 90px;
@@ -541,7 +541,7 @@ p{
 
 .final-app::before{
     content: '';
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/bg/bg_balls_services.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/bg/bg_balls_services.png');
     background-position: center;
     background-size: 100% 100%;
     width: 132px;
@@ -578,7 +578,7 @@ p{
 
 .footer-app-logo{
     display: flex;
-    background-image: url('https://trafalgar.projetoslucasbargas.com/assets/images/initial_logo.png');
+    background-image: url('https://trafalgar-projetoslucasbargas.netlify.app/assets/images/initial_logo.png');
     background-position: center;
     background-size: 100% 100%;
     width: 160px;

@@ -26,7 +26,7 @@
 
 .initial-content{
     padding-top: 15px;
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/bg/initial_bg.jpg');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/bg/initial_bg.jpg');
     background-position: center;
     background-size: cover;
     height: 550px;
@@ -49,7 +49,7 @@
 }
 
 .app-logo{
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/more_imgs/logo.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/more_imgs/logo.png');
     width: 200px;
     height: 66px;
 }
@@ -149,7 +149,7 @@
 
 .room-loupe{
     display: block;
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/icons/loupe.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/icons/loupe.png');
     background-position: center;
     background-size: 100% 100%;
     width: 70px;
@@ -206,7 +206,7 @@
 
 .button-eye{
     display: block;
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/icons/eye.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/icons/eye.png');
     background-position: center;
     background-size: 100% 100%;
     width: 22px;
@@ -283,19 +283,19 @@
 }
 
 .our-service-one a::after{
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/services/restaurant-hover.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/services/restaurant-hover.png');
 }
 
 .our-service-two a::after{
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/services/pool-hover.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/services/pool-hover.png');
 }
 
 .our-service-three a::after{
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/services/cruises-hover.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/services/cruises-hover.png');
 }
 
 .our-service-four a::after{
-    background-image: url('https://hoteliour.projetoslucasbargas.com/assets/images/services/animation-hover.png');
+    background-image: url('https://hoteliour-projetoslucasbargas.netlify.app/assets/images/services/animation-hover.png');
 }
 
 .our-services-content > a{
